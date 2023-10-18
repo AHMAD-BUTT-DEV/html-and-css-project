@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bebas+Neue&family=Charm:wght@700&family=Dancing+Script:wght@400;600&family=Lobster&family=Open+Sans&family=Oswald:wght@500&family=Squada+One&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    max-width: 1300px;
+}
+a , li{
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --white:white ;
+
+}
+
+a .btn{
+    width: 10.9rem;
+    height: 2.3rem;
+    border: none;
+    background-color: #46ffff;
+    border-radius: 0.4rem;
+    font-family: 'Oswald', sans-serif;
+
+   
+}
+a .btn:hover{
+    background-color: #afffff;
+
+}
+
+.containar{
+    margin: 0 auto;
+    padding: 3.6rem  2.4rem ;
+}
+/* nav bar section */
+.section-navbar{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    width: 134.8rem;
+}
+.section-navbar .containar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem ; 
+    
+}
+.section-navbar .nav-bar ul{
+    display: flex;
+    gap: 3.2rem;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    padding-right: 3.199rem;
+    font-family: 'Baloo Bhai 2', sans-serif;
+
+  
+}
+.section-navbar .nav-bar ul li a{
+    color: rgb(5, 130, 255);
+}
+.section-navbar .nav-bar ul li:hover{
+    text-decoration: underline;
+    color: rgb(0, 21, 68);
+
+}
+.section-navbar  .nav-brand a h1{
+       font-size: 2.5rem;
+       font-family: 'Oswald', sans-serif;
+
+}
+/* main section */
+.hero-section{
+    background: #00B4DB;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: calc(100vh - 58px);
+/* height:100vh; */
+width: 134.8rem;
+}
+.containar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containar .main-data{
+    width: 50rem;
+    font-size: 1.3rem;
+    padding-left: 15.799999999999997rem;
+    padding-top: 5.899999999999999rem;
+    color:var(--white);
+
+    & h1{
+        
+     font-family: 'Oswald', sans-serif;
+    }
+    & p{
+        font-family: 'Bebas Neue', sans-serif;
+        letter-spacing: 0.1rem;
+        
+    }
+}
+.containar .img-main img{
+    width: 40rem;
+    margin-right: 18.200000000000003rem;
+    padding-top: 6.9rem;
+}
+/* About seciton */
+.about-section{
+    background: #56CCF2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+width: 134.8rem;
+height:100vh;
+}
+.about-data{
+    text-align: center;
+    margin-top: 15%;
+    color: var(--white);
+    border: 2px solid black;
+    padding: 20px;
+    -moz-border-radius-topleft: 100px;
+-moz-border-radius-bottomright: 100px;
+border-top-left-radius: 100px;
+border-bottom-right-radius: 100px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.about-data h1 {
+      margin-bottom: 0.5rem;
+
+    & a{
+        font-size: 2.7rem;
+        color: var(--white);
+        text-decoration: underline;
+        font-family: 'Oswald', sans-serif;
+
+    }
+}
+.about-data .about-para{
+    font-size: 1.5rem;
+    text-align: justify;
+    font-family: 'Oswald', sans-serif;
+}
+/* For mobile phones: */
+@media screen and (max-width:800px) {
+    html{
+        max-width: 800px;
+        
+    }
+    .section-navbar .containar{
+        display: inline-block;
+    text-align: center;
+    margin-left: 45rem;
+    }
+    .hero-section{
+        height: 88rem;
+    }
+    .hero-section .containar{
+        display: block;   
+        margin-left: 25%; 
+        
+    }
+
+    .hero-section .containar .img-main{
+        padding-left: 10rem;
+    }
+ 
+    .about-section .containar{
+      width: 60rem;
+    }    
+}
